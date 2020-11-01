@@ -41,8 +41,6 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_jam = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txt_harga = new System.Windows.Forms.TextBox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.rbtn_bisnis = new System.Windows.Forms.RadioButton();
             this.rbtn_ekonomi = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -55,14 +53,13 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_tambah = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_pesanan = new System.Windows.Forms.DataGridView();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pesanan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,26 +191,6 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(63, 24);
             this.bunifuCustomLabel1.TabIndex = 36;
             this.bunifuCustomLabel1.Text = "Jam  : ";
-            // 
-            // txt_harga
-            // 
-            this.txt_harga.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_harga.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_harga.Location = new System.Drawing.Point(604, 265);
-            this.txt_harga.Multiline = true;
-            this.txt_harga.Name = "txt_harga";
-            this.txt_harga.Size = new System.Drawing.Size(182, 35);
-            this.txt_harga.TabIndex = 55;
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(520, 269);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(77, 24);
-            this.bunifuCustomLabel8.TabIndex = 54;
-            this.bunifuCustomLabel8.Text = "Harga  : ";
             // 
             // rbtn_bisnis
             // 
@@ -380,13 +357,37 @@
             this.Column2,
             this.Column3,
             this.Column6,
-            this.Column5,
-            this.Column7});
+            this.Column5});
             this.dgv_pesanan.Location = new System.Drawing.Point(19, 482);
             this.dgv_pesanan.Name = "dgv_pesanan";
             this.dgv_pesanan.RowTemplate.Height = 28;
             this.dgv_pesanan.Size = new System.Drawing.Size(795, 195);
             this.dgv_pesanan.TabIndex = 60;
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.ForestGreen;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Pesan";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(705, 680);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(122, 51);
+            this.bunifuThinButton22.TabIndex = 61;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Column1
             // 
@@ -418,36 +419,6 @@
             this.Column5.HeaderText = "Tujuan";
             this.Column5.Name = "Column5";
             // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Harga";
-            this.Column7.Name = "Column7";
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.ForestGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Pesan";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(705, 680);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(122, 51);
-            this.bunifuThinButton22.TabIndex = 61;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Booking_Flight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -459,8 +430,6 @@
             this.Controls.Add(this.btn_tambah);
             this.Controls.Add(this.txt_nopassport);
             this.Controls.Add(this.bunifuCustomLabel9);
-            this.Controls.Add(this.txt_harga);
-            this.Controls.Add(this.bunifuCustomLabel8);
             this.Controls.Add(this.rbtn_bisnis);
             this.Controls.Add(this.rbtn_ekonomi);
             this.Controls.Add(this.bunifuCustomLabel6);
@@ -502,8 +471,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.TextBox txt_jam;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.TextBox txt_harga;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private System.Windows.Forms.RadioButton rbtn_bisnis;
         private System.Windows.Forms.RadioButton rbtn_ekonomi;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
@@ -516,13 +483,12 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_tambah;
         private System.Windows.Forms.DataGridView dgv_pesanan;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
     }
 }

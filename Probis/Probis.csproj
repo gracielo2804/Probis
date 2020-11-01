@@ -123,6 +123,12 @@
     <Compile Include="Booking Flight.Designer.cs">
       <DependentUpon>Booking Flight.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustOrdercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustOrdercs.Designer.cs">
+      <DependentUpon>CustOrdercs.cs</DependentUpon>
+    </Compile>
     <Compile Include="detailHarga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Booking Flight.resx">
       <DependentUpon>Booking Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustOrdercs.resx">
+      <DependentUpon>CustOrdercs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="detailHarga.resx">
       <DependentUpon>detailHarga.cs</DependentUpon>

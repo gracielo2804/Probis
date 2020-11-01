@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Probis
 {
-    public partial class Masterdetail : Form
+    public partial class CustOrdercs : Form
     {
-        public Masterdetail()
+        public CustOrdercs()
         {
             InitializeComponent();
-        }
-
-        private void gb_detail_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
