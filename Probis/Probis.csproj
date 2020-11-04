@@ -147,6 +147,12 @@
     <Compile Include="lihatPaket.Designer.cs">
       <DependentUpon>lihatPaket.cs</DependentUpon>
     </Compile>
+    <Compile Include="listPakettour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listPakettour.Designer.cs">
+      <DependentUpon>listPakettour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masterdetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="lihatPaket.resx">
       <DependentUpon>lihatPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listPakettour.resx">
+      <DependentUpon>listPakettour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masterdetail.resx">
       <DependentUpon>Masterdetail.cs</DependentUpon>

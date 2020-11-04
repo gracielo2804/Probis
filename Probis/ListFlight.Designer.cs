@@ -55,12 +55,13 @@
             this.dgv_listflight.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listflight.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listflight.Location = new System.Drawing.Point(16, 68);
-            this.dgv_listflight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_listflight.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_listflight.Name = "dgv_listflight";
             this.dgv_listflight.ReadOnly = true;
             this.dgv_listflight.RowTemplate.Height = 28;
             this.dgv_listflight.Size = new System.Drawing.Size(996, 333);
             this.dgv_listflight.TabIndex = 14;
+            this.dgv_listflight.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_listflight_CellContentDoubleClick);
             // 
             // btn_hapus
             // 
@@ -149,7 +150,7 @@
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listflight);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListFlight";
             this.Text = "masterFlight";
             this.Load += new System.EventHandler(this.ListFlight_Load);

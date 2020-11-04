@@ -215,6 +215,7 @@
             this.dgv_detailHotel.RowTemplate.Height = 28;
             this.dgv_detailHotel.Size = new System.Drawing.Size(1213, 208);
             this.dgv_detailHotel.TabIndex = 82;
+            this.dgv_detailHotel.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detailHotel_CellContentDoubleClick);
             // 
             // bunifuThinButton21
             // 

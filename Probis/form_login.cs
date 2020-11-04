@@ -17,7 +17,7 @@ namespace Probis
         {
             InitializeComponent();
         }
-        public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=probis;Password=probis");
+        public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=david27;Password=david27");
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
         OracleDataAdapter adapter = new OracleDataAdapter();
@@ -60,7 +60,10 @@ namespace Probis
                     }
                     //MessageBox.Show(user);
                     if(cekuser && cekpass) {
-                        MessageBox.Show("Berhasil Login "+jabatan+" !");
+                        Home h = new Home();
+                        this.Hide();
+                        h.ShowDialog();
+                        this.Show();
                     }
                     else {
                         if (!cekuser) { MessageBox.Show("Username Tidak Ditemukan !"); }

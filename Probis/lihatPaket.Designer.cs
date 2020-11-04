@@ -32,18 +32,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbl_tanggal = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lbl_dari = new System.Windows.Forms.Label();
-            this.lbl_tujuan = new System.Windows.Forms.Label();
-            this.lbl_kendaraan = new System.Windows.Forms.Label();
-            this.lbl_hotel = new System.Windows.Forms.Label();
             this.lbl_penjelasan = new System.Windows.Forms.Label();
+            this.lbl_hotel = new System.Windows.Forms.Label();
+            this.lbl_kendaraan = new System.Windows.Forms.Label();
+            this.lbl_tujuan = new System.Windows.Forms.Label();
+            this.lbl_dari = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_tanggal = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -150,9 +150,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(694, -43);
+            this.pictureBox1.Location = new System.Drawing.Point(463, -28);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(292, 269);
+            this.pictureBox1.Size = new System.Drawing.Size(195, 175);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -174,12 +175,13 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(14, 12);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_Back.Location = new System.Drawing.Point(9, 8);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(116, 70);
+            this.btn_Back.Size = new System.Drawing.Size(77, 45);
             this.btn_Back.TabIndex = 83;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // groupBox1
             // 
@@ -195,132 +197,146 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.lbl_tanggal);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(14, 232);
+            this.groupBox1.Location = new System.Drawing.Point(9, 151);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 321);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(261, 209);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hari Ke - 1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 22);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Tanggal  : ";
-            // 
-            // lbl_tanggal
-            // 
-            this.lbl_tanggal.AutoSize = true;
-            this.lbl_tanggal.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tanggal.Location = new System.Drawing.Point(122, 37);
-            this.lbl_tanggal.Name = "lbl_tanggal";
-            this.lbl_tanggal.Size = new System.Drawing.Size(86, 22);
-            this.lbl_tanggal.TabIndex = 7;
-            this.lbl_tanggal.Text = "xx/xx/xxxx";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(54, 78);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 22);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "Dari  : ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(39, 119);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 22);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Tujuan : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 160);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(155, 22);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Jenis Kendaraan  : ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(45, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 22);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Hotel  : ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(56, 229);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 22);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Penjelasan : ";
-            // 
-            // lbl_dari
-            // 
-            this.lbl_dari.AutoSize = true;
-            this.lbl_dari.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dari.Location = new System.Drawing.Point(122, 78);
-            this.lbl_dari.Name = "lbl_dari";
-            this.lbl_dari.Size = new System.Drawing.Size(86, 22);
-            this.lbl_dari.TabIndex = 20;
-            this.lbl_dari.Text = "xx/xx/xxxx";
-            // 
-            // lbl_tujuan
-            // 
-            this.lbl_tujuan.AutoSize = true;
-            this.lbl_tujuan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tujuan.Location = new System.Drawing.Point(122, 119);
-            this.lbl_tujuan.Name = "lbl_tujuan";
-            this.lbl_tujuan.Size = new System.Drawing.Size(86, 22);
-            this.lbl_tujuan.TabIndex = 21;
-            this.lbl_tujuan.Text = "xx/xx/xxxx";
-            // 
-            // lbl_kendaraan
-            // 
-            this.lbl_kendaraan.AutoSize = true;
-            this.lbl_kendaraan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_kendaraan.Location = new System.Drawing.Point(167, 160);
-            this.lbl_kendaraan.Name = "lbl_kendaraan";
-            this.lbl_kendaraan.Size = new System.Drawing.Size(86, 22);
-            this.lbl_kendaraan.TabIndex = 22;
-            this.lbl_kendaraan.Text = "xx/xx/xxxx";
-            // 
-            // lbl_hotel
-            // 
-            this.lbl_hotel.AutoSize = true;
-            this.lbl_hotel.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hotel.Location = new System.Drawing.Point(122, 192);
-            this.lbl_hotel.Name = "lbl_hotel";
-            this.lbl_hotel.Size = new System.Drawing.Size(86, 22);
-            this.lbl_hotel.TabIndex = 23;
-            this.lbl_hotel.Text = "xx/xx/xxxx";
             // 
             // lbl_penjelasan
             // 
             this.lbl_penjelasan.AutoSize = true;
             this.lbl_penjelasan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_penjelasan.Location = new System.Drawing.Point(167, 229);
+            this.lbl_penjelasan.Location = new System.Drawing.Point(111, 149);
+            this.lbl_penjelasan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_penjelasan.Name = "lbl_penjelasan";
-            this.lbl_penjelasan.Size = new System.Drawing.Size(86, 22);
+            this.lbl_penjelasan.Size = new System.Drawing.Size(72, 16);
             this.lbl_penjelasan.TabIndex = 24;
             this.lbl_penjelasan.Text = "xx/xx/xxxx";
+            // 
+            // lbl_hotel
+            // 
+            this.lbl_hotel.AutoSize = true;
+            this.lbl_hotel.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hotel.Location = new System.Drawing.Point(81, 125);
+            this.lbl_hotel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hotel.Name = "lbl_hotel";
+            this.lbl_hotel.Size = new System.Drawing.Size(72, 16);
+            this.lbl_hotel.TabIndex = 23;
+            this.lbl_hotel.Text = "xx/xx/xxxx";
+            // 
+            // lbl_kendaraan
+            // 
+            this.lbl_kendaraan.AutoSize = true;
+            this.lbl_kendaraan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_kendaraan.Location = new System.Drawing.Point(111, 104);
+            this.lbl_kendaraan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_kendaraan.Name = "lbl_kendaraan";
+            this.lbl_kendaraan.Size = new System.Drawing.Size(72, 16);
+            this.lbl_kendaraan.TabIndex = 22;
+            this.lbl_kendaraan.Text = "xx/xx/xxxx";
+            // 
+            // lbl_tujuan
+            // 
+            this.lbl_tujuan.AutoSize = true;
+            this.lbl_tujuan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tujuan.Location = new System.Drawing.Point(81, 77);
+            this.lbl_tujuan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tujuan.Name = "lbl_tujuan";
+            this.lbl_tujuan.Size = new System.Drawing.Size(72, 16);
+            this.lbl_tujuan.TabIndex = 21;
+            this.lbl_tujuan.Text = "xx/xx/xxxx";
+            // 
+            // lbl_dari
+            // 
+            this.lbl_dari.AutoSize = true;
+            this.lbl_dari.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dari.Location = new System.Drawing.Point(81, 51);
+            this.lbl_dari.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_dari.Name = "lbl_dari";
+            this.lbl_dari.Size = new System.Drawing.Size(72, 16);
+            this.lbl_dari.TabIndex = 20;
+            this.lbl_dari.Text = "xx/xx/xxxx";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(37, 149);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 16);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Penjelasan : ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(30, 125);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Hotel  : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(4, 104);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 16);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Jenis Kendaraan  : ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(26, 77);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Tujuan : ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(36, 51);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 16);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "Dari  : ";
+            // 
+            // lbl_tanggal
+            // 
+            this.lbl_tanggal.AutoSize = true;
+            this.lbl_tanggal.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tanggal.Location = new System.Drawing.Point(81, 24);
+            this.lbl_tanggal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tanggal.Name = "lbl_tanggal";
+            this.lbl_tanggal.Size = new System.Drawing.Size(72, 16);
+            this.lbl_tanggal.TabIndex = 7;
+            this.lbl_tanggal.Text = "xx/xx/xxxx";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(19, 24);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 16);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Tanggal  : ";
             // 
             // groupBox2
             // 
@@ -336,9 +352,11 @@
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Location = new System.Drawing.Point(951, 232);
+            this.groupBox2.Location = new System.Drawing.Point(634, 151);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(391, 321);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(261, 209);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hari Ke - 3";
@@ -347,9 +365,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 229);
+            this.label1.Location = new System.Drawing.Point(111, 149);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 22);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "xx/xx/xxxx";
             // 
@@ -357,9 +376,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 192);
+            this.label2.Location = new System.Drawing.Point(81, 125);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 23;
             this.label2.Text = "xx/xx/xxxx";
             // 
@@ -367,9 +387,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(167, 160);
+            this.label3.Location = new System.Drawing.Point(111, 104);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 22);
+            this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 22;
             this.label3.Text = "xx/xx/xxxx";
             // 
@@ -377,9 +398,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(122, 119);
+            this.label4.Location = new System.Drawing.Point(81, 77);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 22);
+            this.label4.Size = new System.Drawing.Size(72, 16);
             this.label4.TabIndex = 21;
             this.label4.Text = "xx/xx/xxxx";
             // 
@@ -387,9 +409,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(122, 78);
+            this.label6.Location = new System.Drawing.Point(81, 51);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 22);
+            this.label6.Size = new System.Drawing.Size(72, 16);
             this.label6.TabIndex = 20;
             this.label6.Text = "xx/xx/xxxx";
             // 
@@ -397,9 +420,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(56, 229);
+            this.label7.Location = new System.Drawing.Point(37, 149);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 22);
+            this.label7.Size = new System.Drawing.Size(75, 16);
             this.label7.TabIndex = 19;
             this.label7.Text = "Penjelasan : ";
             // 
@@ -407,9 +431,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(45, 192);
+            this.label9.Location = new System.Drawing.Point(30, 125);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 22);
+            this.label9.Size = new System.Drawing.Size(50, 16);
             this.label9.TabIndex = 18;
             this.label9.Text = "Hotel  : ";
             // 
@@ -417,9 +442,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 160);
+            this.label14.Location = new System.Drawing.Point(4, 104);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(155, 22);
+            this.label14.Size = new System.Drawing.Size(110, 16);
             this.label14.TabIndex = 17;
             this.label14.Text = "Jenis Kendaraan  : ";
             // 
@@ -427,9 +453,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(39, 119);
+            this.label15.Location = new System.Drawing.Point(26, 77);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(77, 22);
+            this.label15.Size = new System.Drawing.Size(55, 16);
             this.label15.TabIndex = 16;
             this.label15.Text = "Tujuan : ";
             // 
@@ -437,9 +464,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(54, 78);
+            this.label16.Location = new System.Drawing.Point(36, 51);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 22);
+            this.label16.Size = new System.Drawing.Size(42, 16);
             this.label16.TabIndex = 15;
             this.label16.Text = "Dari  : ";
             // 
@@ -447,9 +475,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(122, 37);
+            this.label17.Location = new System.Drawing.Point(81, 24);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(86, 22);
+            this.label17.Size = new System.Drawing.Size(72, 16);
             this.label17.TabIndex = 7;
             this.label17.Text = "xx/xx/xxxx";
             // 
@@ -457,9 +486,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(28, 37);
+            this.label18.Location = new System.Drawing.Point(19, 24);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 22);
+            this.label18.Size = new System.Drawing.Size(61, 16);
             this.label18.TabIndex = 6;
             this.label18.Text = "Tanggal  : ";
             // 
@@ -477,9 +507,11 @@
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label29);
             this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Location = new System.Drawing.Point(481, 232);
+            this.groupBox3.Location = new System.Drawing.Point(321, 151);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(391, 321);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(261, 209);
             this.groupBox3.TabIndex = 86;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hari Ke - 2";
@@ -488,9 +520,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(167, 229);
+            this.label19.Location = new System.Drawing.Point(111, 149);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 22);
+            this.label19.Size = new System.Drawing.Size(72, 16);
             this.label19.TabIndex = 24;
             this.label19.Text = "xx/xx/xxxx";
             // 
@@ -498,9 +531,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(122, 192);
+            this.label20.Location = new System.Drawing.Point(81, 125);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 22);
+            this.label20.Size = new System.Drawing.Size(72, 16);
             this.label20.TabIndex = 23;
             this.label20.Text = "xx/xx/xxxx";
             // 
@@ -508,9 +542,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(167, 160);
+            this.label21.Location = new System.Drawing.Point(111, 104);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(86, 22);
+            this.label21.Size = new System.Drawing.Size(72, 16);
             this.label21.TabIndex = 22;
             this.label21.Text = "xx/xx/xxxx";
             // 
@@ -518,9 +553,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(122, 119);
+            this.label22.Location = new System.Drawing.Point(81, 77);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(86, 22);
+            this.label22.Size = new System.Drawing.Size(72, 16);
             this.label22.TabIndex = 21;
             this.label22.Text = "xx/xx/xxxx";
             // 
@@ -528,9 +564,10 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(122, 78);
+            this.label23.Location = new System.Drawing.Point(81, 51);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(86, 22);
+            this.label23.Size = new System.Drawing.Size(72, 16);
             this.label23.TabIndex = 20;
             this.label23.Text = "xx/xx/xxxx";
             // 
@@ -538,9 +575,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(56, 229);
+            this.label24.Location = new System.Drawing.Point(37, 149);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(105, 22);
+            this.label24.Size = new System.Drawing.Size(75, 16);
             this.label24.TabIndex = 19;
             this.label24.Text = "Penjelasan : ";
             // 
@@ -548,9 +586,10 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(45, 192);
+            this.label25.Location = new System.Drawing.Point(30, 125);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 22);
+            this.label25.Size = new System.Drawing.Size(50, 16);
             this.label25.TabIndex = 18;
             this.label25.Text = "Hotel  : ";
             // 
@@ -558,9 +597,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(6, 160);
+            this.label26.Location = new System.Drawing.Point(4, 104);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(155, 22);
+            this.label26.Size = new System.Drawing.Size(110, 16);
             this.label26.TabIndex = 17;
             this.label26.Text = "Jenis Kendaraan  : ";
             // 
@@ -568,9 +608,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(39, 119);
+            this.label27.Location = new System.Drawing.Point(26, 77);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(77, 22);
+            this.label27.Size = new System.Drawing.Size(55, 16);
             this.label27.TabIndex = 16;
             this.label27.Text = "Tujuan : ";
             // 
@@ -578,9 +619,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(54, 78);
+            this.label28.Location = new System.Drawing.Point(36, 51);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(62, 22);
+            this.label28.Size = new System.Drawing.Size(42, 16);
             this.label28.TabIndex = 15;
             this.label28.Text = "Dari  : ";
             // 
@@ -588,9 +630,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(122, 37);
+            this.label29.Location = new System.Drawing.Point(81, 24);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(86, 22);
+            this.label29.Size = new System.Drawing.Size(72, 16);
             this.label29.TabIndex = 7;
             this.label29.Text = "xx/xx/xxxx";
             // 
@@ -598,9 +641,10 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(28, 37);
+            this.label30.Location = new System.Drawing.Point(19, 24);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(88, 22);
+            this.label30.Size = new System.Drawing.Size(61, 16);
             this.label30.TabIndex = 6;
             this.label30.Text = "Tanggal  : ";
             // 
@@ -618,9 +662,11 @@
             this.groupBox4.Controls.Add(this.label40);
             this.groupBox4.Controls.Add(this.label41);
             this.groupBox4.Controls.Add(this.label42);
-            this.groupBox4.Location = new System.Drawing.Point(14, 602);
+            this.groupBox4.Location = new System.Drawing.Point(9, 391);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(391, 321);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(261, 209);
             this.groupBox4.TabIndex = 85;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hari Ke - 4";
@@ -629,9 +675,10 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(167, 229);
+            this.label31.Location = new System.Drawing.Point(111, 149);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 22);
+            this.label31.Size = new System.Drawing.Size(72, 16);
             this.label31.TabIndex = 24;
             this.label31.Text = "xx/xx/xxxx";
             // 
@@ -639,9 +686,10 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(122, 192);
+            this.label32.Location = new System.Drawing.Point(81, 125);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(86, 22);
+            this.label32.Size = new System.Drawing.Size(72, 16);
             this.label32.TabIndex = 23;
             this.label32.Text = "xx/xx/xxxx";
             // 
@@ -649,9 +697,10 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(167, 160);
+            this.label33.Location = new System.Drawing.Point(111, 104);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(86, 22);
+            this.label33.Size = new System.Drawing.Size(72, 16);
             this.label33.TabIndex = 22;
             this.label33.Text = "xx/xx/xxxx";
             // 
@@ -659,9 +708,10 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(122, 119);
+            this.label34.Location = new System.Drawing.Point(81, 77);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(86, 22);
+            this.label34.Size = new System.Drawing.Size(72, 16);
             this.label34.TabIndex = 21;
             this.label34.Text = "xx/xx/xxxx";
             // 
@@ -669,9 +719,10 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(122, 78);
+            this.label35.Location = new System.Drawing.Point(81, 51);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(86, 22);
+            this.label35.Size = new System.Drawing.Size(72, 16);
             this.label35.TabIndex = 20;
             this.label35.Text = "xx/xx/xxxx";
             // 
@@ -679,9 +730,10 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(56, 229);
+            this.label36.Location = new System.Drawing.Point(37, 149);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(105, 22);
+            this.label36.Size = new System.Drawing.Size(75, 16);
             this.label36.TabIndex = 19;
             this.label36.Text = "Penjelasan : ";
             // 
@@ -689,9 +741,10 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(45, 192);
+            this.label37.Location = new System.Drawing.Point(30, 125);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(71, 22);
+            this.label37.Size = new System.Drawing.Size(50, 16);
             this.label37.TabIndex = 18;
             this.label37.Text = "Hotel  : ";
             // 
@@ -699,9 +752,10 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(6, 160);
+            this.label38.Location = new System.Drawing.Point(4, 104);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(155, 22);
+            this.label38.Size = new System.Drawing.Size(110, 16);
             this.label38.TabIndex = 17;
             this.label38.Text = "Jenis Kendaraan  : ";
             // 
@@ -709,9 +763,10 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(39, 119);
+            this.label39.Location = new System.Drawing.Point(26, 77);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(77, 22);
+            this.label39.Size = new System.Drawing.Size(55, 16);
             this.label39.TabIndex = 16;
             this.label39.Text = "Tujuan : ";
             // 
@@ -719,9 +774,10 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(54, 78);
+            this.label40.Location = new System.Drawing.Point(36, 51);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(62, 22);
+            this.label40.Size = new System.Drawing.Size(42, 16);
             this.label40.TabIndex = 15;
             this.label40.Text = "Dari  : ";
             // 
@@ -729,9 +785,10 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(122, 37);
+            this.label41.Location = new System.Drawing.Point(81, 24);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(86, 22);
+            this.label41.Size = new System.Drawing.Size(72, 16);
             this.label41.TabIndex = 7;
             this.label41.Text = "xx/xx/xxxx";
             // 
@@ -739,9 +796,10 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(28, 37);
+            this.label42.Location = new System.Drawing.Point(19, 24);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(88, 22);
+            this.label42.Size = new System.Drawing.Size(61, 16);
             this.label42.TabIndex = 6;
             this.label42.Text = "Tanggal  : ";
             // 
@@ -759,9 +817,11 @@
             this.groupBox5.Controls.Add(this.label52);
             this.groupBox5.Controls.Add(this.label53);
             this.groupBox5.Controls.Add(this.label54);
-            this.groupBox5.Location = new System.Drawing.Point(481, 602);
+            this.groupBox5.Location = new System.Drawing.Point(321, 391);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(391, 321);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(261, 209);
             this.groupBox5.TabIndex = 86;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Hari Ke - 5";
@@ -770,9 +830,10 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(167, 229);
+            this.label43.Location = new System.Drawing.Point(111, 149);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(86, 22);
+            this.label43.Size = new System.Drawing.Size(72, 16);
             this.label43.TabIndex = 24;
             this.label43.Text = "xx/xx/xxxx";
             // 
@@ -780,9 +841,10 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(122, 192);
+            this.label44.Location = new System.Drawing.Point(81, 125);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(86, 22);
+            this.label44.Size = new System.Drawing.Size(72, 16);
             this.label44.TabIndex = 23;
             this.label44.Text = "xx/xx/xxxx";
             // 
@@ -790,9 +852,10 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(167, 160);
+            this.label45.Location = new System.Drawing.Point(111, 104);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(86, 22);
+            this.label45.Size = new System.Drawing.Size(72, 16);
             this.label45.TabIndex = 22;
             this.label45.Text = "xx/xx/xxxx";
             // 
@@ -800,9 +863,10 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(122, 119);
+            this.label46.Location = new System.Drawing.Point(81, 77);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(86, 22);
+            this.label46.Size = new System.Drawing.Size(72, 16);
             this.label46.TabIndex = 21;
             this.label46.Text = "xx/xx/xxxx";
             // 
@@ -810,9 +874,10 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(122, 78);
+            this.label47.Location = new System.Drawing.Point(81, 51);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(86, 22);
+            this.label47.Size = new System.Drawing.Size(72, 16);
             this.label47.TabIndex = 20;
             this.label47.Text = "xx/xx/xxxx";
             // 
@@ -820,9 +885,10 @@
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(56, 229);
+            this.label48.Location = new System.Drawing.Point(37, 149);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(105, 22);
+            this.label48.Size = new System.Drawing.Size(75, 16);
             this.label48.TabIndex = 19;
             this.label48.Text = "Penjelasan : ";
             // 
@@ -830,9 +896,10 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(45, 192);
+            this.label49.Location = new System.Drawing.Point(30, 125);
+            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(71, 22);
+            this.label49.Size = new System.Drawing.Size(50, 16);
             this.label49.TabIndex = 18;
             this.label49.Text = "Hotel  : ";
             // 
@@ -840,9 +907,10 @@
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(6, 160);
+            this.label50.Location = new System.Drawing.Point(4, 104);
+            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(155, 22);
+            this.label50.Size = new System.Drawing.Size(110, 16);
             this.label50.TabIndex = 17;
             this.label50.Text = "Jenis Kendaraan  : ";
             // 
@@ -850,9 +918,10 @@
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(39, 119);
+            this.label51.Location = new System.Drawing.Point(26, 77);
+            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(77, 22);
+            this.label51.Size = new System.Drawing.Size(55, 16);
             this.label51.TabIndex = 16;
             this.label51.Text = "Tujuan : ";
             // 
@@ -860,9 +929,10 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(54, 78);
+            this.label52.Location = new System.Drawing.Point(36, 51);
+            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(62, 22);
+            this.label52.Size = new System.Drawing.Size(42, 16);
             this.label52.TabIndex = 15;
             this.label52.Text = "Dari  : ";
             // 
@@ -870,9 +940,10 @@
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(122, 37);
+            this.label53.Location = new System.Drawing.Point(81, 24);
+            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(86, 22);
+            this.label53.Size = new System.Drawing.Size(72, 16);
             this.label53.TabIndex = 7;
             this.label53.Text = "xx/xx/xxxx";
             // 
@@ -880,9 +951,10 @@
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(28, 37);
+            this.label54.Location = new System.Drawing.Point(19, 24);
+            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(88, 22);
+            this.label54.Size = new System.Drawing.Size(61, 16);
             this.label54.TabIndex = 6;
             this.label54.Text = "Tanggal  : ";
             // 
@@ -900,9 +972,11 @@
             this.groupBox6.Controls.Add(this.label64);
             this.groupBox6.Controls.Add(this.label65);
             this.groupBox6.Controls.Add(this.label66);
-            this.groupBox6.Location = new System.Drawing.Point(951, 602);
+            this.groupBox6.Location = new System.Drawing.Point(634, 391);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(391, 321);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Size = new System.Drawing.Size(261, 209);
             this.groupBox6.TabIndex = 87;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hari Ke - 6";
@@ -911,9 +985,10 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(167, 229);
+            this.label55.Location = new System.Drawing.Point(111, 149);
+            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(86, 22);
+            this.label55.Size = new System.Drawing.Size(72, 16);
             this.label55.TabIndex = 24;
             this.label55.Text = "xx/xx/xxxx";
             // 
@@ -921,9 +996,10 @@
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(122, 192);
+            this.label56.Location = new System.Drawing.Point(81, 125);
+            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(86, 22);
+            this.label56.Size = new System.Drawing.Size(72, 16);
             this.label56.TabIndex = 23;
             this.label56.Text = "xx/xx/xxxx";
             // 
@@ -931,9 +1007,10 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(167, 160);
+            this.label57.Location = new System.Drawing.Point(111, 104);
+            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(86, 22);
+            this.label57.Size = new System.Drawing.Size(72, 16);
             this.label57.TabIndex = 22;
             this.label57.Text = "xx/xx/xxxx";
             // 
@@ -941,9 +1018,10 @@
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(122, 119);
+            this.label58.Location = new System.Drawing.Point(81, 77);
+            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(86, 22);
+            this.label58.Size = new System.Drawing.Size(72, 16);
             this.label58.TabIndex = 21;
             this.label58.Text = "xx/xx/xxxx";
             // 
@@ -951,9 +1029,10 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(122, 78);
+            this.label59.Location = new System.Drawing.Point(81, 51);
+            this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(86, 22);
+            this.label59.Size = new System.Drawing.Size(72, 16);
             this.label59.TabIndex = 20;
             this.label59.Text = "xx/xx/xxxx";
             // 
@@ -961,9 +1040,10 @@
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(56, 229);
+            this.label60.Location = new System.Drawing.Point(37, 149);
+            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(105, 22);
+            this.label60.Size = new System.Drawing.Size(75, 16);
             this.label60.TabIndex = 19;
             this.label60.Text = "Penjelasan : ";
             // 
@@ -971,9 +1051,10 @@
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(45, 192);
+            this.label61.Location = new System.Drawing.Point(30, 125);
+            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(71, 22);
+            this.label61.Size = new System.Drawing.Size(50, 16);
             this.label61.TabIndex = 18;
             this.label61.Text = "Hotel  : ";
             // 
@@ -981,9 +1062,10 @@
             // 
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(6, 160);
+            this.label62.Location = new System.Drawing.Point(4, 104);
+            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(155, 22);
+            this.label62.Size = new System.Drawing.Size(110, 16);
             this.label62.TabIndex = 17;
             this.label62.Text = "Jenis Kendaraan  : ";
             // 
@@ -991,9 +1073,10 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(39, 119);
+            this.label63.Location = new System.Drawing.Point(26, 77);
+            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(77, 22);
+            this.label63.Size = new System.Drawing.Size(55, 16);
             this.label63.TabIndex = 16;
             this.label63.Text = "Tujuan : ";
             // 
@@ -1001,9 +1084,10 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(54, 78);
+            this.label64.Location = new System.Drawing.Point(36, 51);
+            this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(62, 22);
+            this.label64.Size = new System.Drawing.Size(42, 16);
             this.label64.TabIndex = 15;
             this.label64.Text = "Dari  : ";
             // 
@@ -1011,9 +1095,10 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(122, 37);
+            this.label65.Location = new System.Drawing.Point(81, 24);
+            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(86, 22);
+            this.label65.Size = new System.Drawing.Size(72, 16);
             this.label65.TabIndex = 7;
             this.label65.Text = "xx/xx/xxxx";
             // 
@@ -1021,9 +1106,10 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(28, 37);
+            this.label66.Location = new System.Drawing.Point(19, 24);
+            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(88, 22);
+            this.label66.Size = new System.Drawing.Size(61, 16);
             this.label66.TabIndex = 6;
             this.label66.Text = "Tanggal  : ";
             // 
@@ -1041,9 +1127,11 @@
             this.groupBox7.Controls.Add(this.label76);
             this.groupBox7.Controls.Add(this.label77);
             this.groupBox7.Controls.Add(this.label78);
-            this.groupBox7.Location = new System.Drawing.Point(1396, 232);
+            this.groupBox7.Location = new System.Drawing.Point(931, 151);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(391, 321);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Size = new System.Drawing.Size(261, 209);
             this.groupBox7.TabIndex = 86;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Hari Ke - 4";
@@ -1052,9 +1140,10 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(167, 229);
+            this.label67.Location = new System.Drawing.Point(111, 149);
+            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(86, 22);
+            this.label67.Size = new System.Drawing.Size(72, 16);
             this.label67.TabIndex = 24;
             this.label67.Text = "xx/xx/xxxx";
             // 
@@ -1062,9 +1151,10 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(122, 192);
+            this.label68.Location = new System.Drawing.Point(81, 125);
+            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(86, 22);
+            this.label68.Size = new System.Drawing.Size(72, 16);
             this.label68.TabIndex = 23;
             this.label68.Text = "xx/xx/xxxx";
             // 
@@ -1072,9 +1162,10 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(167, 160);
+            this.label69.Location = new System.Drawing.Point(111, 104);
+            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(86, 22);
+            this.label69.Size = new System.Drawing.Size(72, 16);
             this.label69.TabIndex = 22;
             this.label69.Text = "xx/xx/xxxx";
             // 
@@ -1082,9 +1173,10 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(122, 119);
+            this.label70.Location = new System.Drawing.Point(81, 77);
+            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(86, 22);
+            this.label70.Size = new System.Drawing.Size(72, 16);
             this.label70.TabIndex = 21;
             this.label70.Text = "xx/xx/xxxx";
             // 
@@ -1092,9 +1184,10 @@
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(122, 78);
+            this.label71.Location = new System.Drawing.Point(81, 51);
+            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(86, 22);
+            this.label71.Size = new System.Drawing.Size(72, 16);
             this.label71.TabIndex = 20;
             this.label71.Text = "xx/xx/xxxx";
             // 
@@ -1102,9 +1195,10 @@
             // 
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(56, 229);
+            this.label72.Location = new System.Drawing.Point(37, 149);
+            this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(105, 22);
+            this.label72.Size = new System.Drawing.Size(75, 16);
             this.label72.TabIndex = 19;
             this.label72.Text = "Penjelasan : ";
             // 
@@ -1112,9 +1206,10 @@
             // 
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(45, 192);
+            this.label73.Location = new System.Drawing.Point(30, 125);
+            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(71, 22);
+            this.label73.Size = new System.Drawing.Size(50, 16);
             this.label73.TabIndex = 18;
             this.label73.Text = "Hotel  : ";
             // 
@@ -1122,9 +1217,10 @@
             // 
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(6, 160);
+            this.label74.Location = new System.Drawing.Point(4, 104);
+            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(155, 22);
+            this.label74.Size = new System.Drawing.Size(110, 16);
             this.label74.TabIndex = 17;
             this.label74.Text = "Jenis Kendaraan  : ";
             // 
@@ -1132,9 +1228,10 @@
             // 
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(39, 119);
+            this.label75.Location = new System.Drawing.Point(26, 77);
+            this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(77, 22);
+            this.label75.Size = new System.Drawing.Size(55, 16);
             this.label75.TabIndex = 16;
             this.label75.Text = "Tujuan : ";
             // 
@@ -1142,9 +1239,10 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(54, 78);
+            this.label76.Location = new System.Drawing.Point(36, 51);
+            this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(62, 22);
+            this.label76.Size = new System.Drawing.Size(42, 16);
             this.label76.TabIndex = 15;
             this.label76.Text = "Dari  : ";
             // 
@@ -1152,9 +1250,10 @@
             // 
             this.label77.AutoSize = true;
             this.label77.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(122, 37);
+            this.label77.Location = new System.Drawing.Point(81, 24);
+            this.label77.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(86, 22);
+            this.label77.Size = new System.Drawing.Size(72, 16);
             this.label77.TabIndex = 7;
             this.label77.Text = "xx/xx/xxxx";
             // 
@@ -1162,9 +1261,10 @@
             // 
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(28, 37);
+            this.label78.Location = new System.Drawing.Point(19, 24);
+            this.label78.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(88, 22);
+            this.label78.Size = new System.Drawing.Size(61, 16);
             this.label78.TabIndex = 6;
             this.label78.Text = "Tanggal  : ";
             // 
@@ -1182,9 +1282,11 @@
             this.groupBox8.Controls.Add(this.label88);
             this.groupBox8.Controls.Add(this.label89);
             this.groupBox8.Controls.Add(this.label90);
-            this.groupBox8.Location = new System.Drawing.Point(1396, 602);
+            this.groupBox8.Location = new System.Drawing.Point(931, 391);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(391, 321);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Size = new System.Drawing.Size(261, 209);
             this.groupBox8.TabIndex = 88;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Hari Ke - 8";
@@ -1193,9 +1295,10 @@
             // 
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(167, 229);
+            this.label79.Location = new System.Drawing.Point(111, 149);
+            this.label79.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(86, 22);
+            this.label79.Size = new System.Drawing.Size(72, 16);
             this.label79.TabIndex = 24;
             this.label79.Text = "xx/xx/xxxx";
             // 
@@ -1203,9 +1306,10 @@
             // 
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(122, 192);
+            this.label80.Location = new System.Drawing.Point(81, 125);
+            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(86, 22);
+            this.label80.Size = new System.Drawing.Size(72, 16);
             this.label80.TabIndex = 23;
             this.label80.Text = "xx/xx/xxxx";
             // 
@@ -1213,9 +1317,10 @@
             // 
             this.label81.AutoSize = true;
             this.label81.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(167, 160);
+            this.label81.Location = new System.Drawing.Point(111, 104);
+            this.label81.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(86, 22);
+            this.label81.Size = new System.Drawing.Size(72, 16);
             this.label81.TabIndex = 22;
             this.label81.Text = "xx/xx/xxxx";
             // 
@@ -1223,9 +1328,10 @@
             // 
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(122, 119);
+            this.label82.Location = new System.Drawing.Point(81, 77);
+            this.label82.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(86, 22);
+            this.label82.Size = new System.Drawing.Size(72, 16);
             this.label82.TabIndex = 21;
             this.label82.Text = "xx/xx/xxxx";
             // 
@@ -1233,9 +1339,10 @@
             // 
             this.label83.AutoSize = true;
             this.label83.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(122, 78);
+            this.label83.Location = new System.Drawing.Point(81, 51);
+            this.label83.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(86, 22);
+            this.label83.Size = new System.Drawing.Size(72, 16);
             this.label83.TabIndex = 20;
             this.label83.Text = "xx/xx/xxxx";
             // 
@@ -1243,9 +1350,10 @@
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(56, 229);
+            this.label84.Location = new System.Drawing.Point(37, 149);
+            this.label84.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(105, 22);
+            this.label84.Size = new System.Drawing.Size(75, 16);
             this.label84.TabIndex = 19;
             this.label84.Text = "Penjelasan : ";
             // 
@@ -1253,9 +1361,10 @@
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(45, 192);
+            this.label85.Location = new System.Drawing.Point(30, 125);
+            this.label85.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(71, 22);
+            this.label85.Size = new System.Drawing.Size(50, 16);
             this.label85.TabIndex = 18;
             this.label85.Text = "Hotel  : ";
             // 
@@ -1263,9 +1372,10 @@
             // 
             this.label86.AutoSize = true;
             this.label86.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(6, 160);
+            this.label86.Location = new System.Drawing.Point(4, 104);
+            this.label86.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(155, 22);
+            this.label86.Size = new System.Drawing.Size(110, 16);
             this.label86.TabIndex = 17;
             this.label86.Text = "Jenis Kendaraan  : ";
             // 
@@ -1273,9 +1383,10 @@
             // 
             this.label87.AutoSize = true;
             this.label87.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(39, 119);
+            this.label87.Location = new System.Drawing.Point(26, 77);
+            this.label87.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(77, 22);
+            this.label87.Size = new System.Drawing.Size(55, 16);
             this.label87.TabIndex = 16;
             this.label87.Text = "Tujuan : ";
             // 
@@ -1283,9 +1394,10 @@
             // 
             this.label88.AutoSize = true;
             this.label88.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(54, 78);
+            this.label88.Location = new System.Drawing.Point(36, 51);
+            this.label88.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(62, 22);
+            this.label88.Size = new System.Drawing.Size(42, 16);
             this.label88.TabIndex = 15;
             this.label88.Text = "Dari  : ";
             // 
@@ -1293,9 +1405,10 @@
             // 
             this.label89.AutoSize = true;
             this.label89.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(122, 37);
+            this.label89.Location = new System.Drawing.Point(81, 24);
+            this.label89.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(86, 22);
+            this.label89.Size = new System.Drawing.Size(72, 16);
             this.label89.TabIndex = 7;
             this.label89.Text = "xx/xx/xxxx";
             // 
@@ -1303,9 +1416,10 @@
             // 
             this.label90.AutoSize = true;
             this.label90.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(28, 37);
+            this.label90.Location = new System.Drawing.Point(19, 24);
+            this.label90.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(88, 22);
+            this.label90.Size = new System.Drawing.Size(61, 16);
             this.label90.TabIndex = 6;
             this.label90.Text = "Tanggal  : ";
             // 
@@ -1327,18 +1441,18 @@
             this.btn_detailHarga.IdleFillColor = System.Drawing.Color.DarkBlue;
             this.btn_detailHarga.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_detailHarga.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_detailHarga.Location = new System.Drawing.Point(1631, 12);
-            this.btn_detailHarga.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_detailHarga.Location = new System.Drawing.Point(1087, 8);
+            this.btn_detailHarga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_detailHarga.Name = "btn_detailHarga";
-            this.btn_detailHarga.Size = new System.Drawing.Size(156, 70);
+            this.btn_detailHarga.Size = new System.Drawing.Size(104, 45);
             this.btn_detailHarga.TabIndex = 89;
             this.btn_detailHarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lihatPaket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1813, 1011);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.btn_detailHarga);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -1350,6 +1464,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "lihatPaket";
             this.Text = "lihatPaket";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -39,7 +39,10 @@ namespace Probis
 
         private void btn_tour_Click(object sender, EventArgs e)
         {
-
+            listPakettour m = new listPakettour();
+            this.Hide();
+            m.ShowDialog();
+            this.Show();
         }
 
         private void btn_hotel_Click(object sender, EventArgs e)

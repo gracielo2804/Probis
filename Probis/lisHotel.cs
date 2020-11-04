@@ -131,5 +131,17 @@ namespace Probis
 
             }
         }
+        public static string namahotel="";
+        private void dgv_detailHotel_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (Masterdetail.hotel == true)
+            {
+                if (e.RowIndex > -1)
+                {
+                    namahotel = dgv_listHotel.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    MessageBox.Show("Hotel Berhasil Terpilih");
+                }
+            }
+        }
     }
 }

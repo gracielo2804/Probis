@@ -46,5 +46,18 @@ namespace Probis
             ListFlight_Load(sender,e);
             
         }
+        public static string idpesawat="";
+        private void dgv_listflight_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (Masterdetail.pesawat == true)
+            {
+                if (e.RowIndex > -1)
+                {
+                    idpesawat = dgv_listflight.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    MessageBox.Show("Berhasil Memilih Pesawat");
+                    Masterdetail.pesawat = false;
+                }
+            }
+        }
     }
 }
