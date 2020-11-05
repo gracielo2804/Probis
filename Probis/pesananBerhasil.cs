@@ -21,5 +21,13 @@ namespace Probis
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home h = new Home();
+            this.Hide();
+            h.ShowDialog();
+            this.Show();
+        }
     }
 }

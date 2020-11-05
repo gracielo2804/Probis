@@ -16,5 +16,17 @@ namespace Probis
         {
             InitializeComponent();
         }
+
+        private void btn_bayar_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Yakin Sesuai ?", "Warning", MessageBoxButtons.YesNo);
+            if(d == DialogResult.Yes)
+            {
+                pesananBerhasil p = new pesananBerhasil();
+                this.Hide();
+                p.ShowDialog();
+                this.Show();
+            }
+        }
     }
 }

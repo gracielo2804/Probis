@@ -37,12 +37,6 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_tambah = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_pesanan = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tbemail = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -165,49 +159,12 @@
             // 
             this.dgv_pesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_pesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_pesanan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column2,
-            this.Column3,
-            this.Column6,
-            this.Column5});
             this.dgv_pesanan.Location = new System.Drawing.Point(13, 313);
             this.dgv_pesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_pesanan.Name = "dgv_pesanan";
             this.dgv_pesanan.RowTemplate.Height = 28;
             this.dgv_pesanan.Size = new System.Drawing.Size(530, 127);
             this.dgv_pesanan.TabIndex = 60;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nama";
-            this.Column1.Name = "Column1";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "No.KTP";
-            this.Column4.Name = "Column4";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Kode Pesawat";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Jenis Pesawat";
-            this.Column3.Name = "Column3";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Jam";
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Tujuan";
-            this.Column5.Name = "Column5";
             // 
             // bunifuThinButton22
             // 
@@ -342,12 +299,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn_tambah;
         private System.Windows.Forms.DataGridView dgv_pesanan;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.TextBox tbemail;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.TextBox tbnama;

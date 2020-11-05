@@ -216,9 +216,9 @@
             this.lbl_asuransi.Location = new System.Drawing.Point(181, 183);
             this.lbl_asuransi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_asuransi.Name = "lbl_asuransi";
-            this.lbl_asuransi.Size = new System.Drawing.Size(45, 18);
+            this.lbl_asuransi.Size = new System.Drawing.Size(16, 18);
             this.lbl_asuransi.TabIndex = 92;
-            this.lbl_asuransi.Text = "1,235";
+            this.lbl_asuransi.Text = "7";
             // 
             // label11
             // 
@@ -249,9 +249,9 @@
             this.lbl_visae.Location = new System.Drawing.Point(181, 210);
             this.lbl_visae.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_visae.Name = "lbl_visae";
-            this.lbl_visae.Size = new System.Drawing.Size(45, 18);
+            this.lbl_visae.Size = new System.Drawing.Size(24, 18);
             this.lbl_visae.TabIndex = 95;
-            this.lbl_visae.Text = "1,235";
+            this.lbl_visae.Text = "23";
             // 
             // label12
             // 
@@ -329,7 +329,7 @@
             this.Controls.Add(this.btn_back);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "detailHarga";
-            this.Text = "detailHarga";
+            this.Text = "6";
             this.Load += new System.EventHandler(this.detailHarga_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

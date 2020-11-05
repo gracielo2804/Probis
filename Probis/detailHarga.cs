@@ -19,7 +19,7 @@ namespace Probis
 
         private void detailHarga_Load(object sender, EventArgs e)
         {
-
+            lbl_harga.Text = Home.harga.ToString();
         }
 
         private void btn_back_Click(object sender, EventArgs e)

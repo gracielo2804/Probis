@@ -37,11 +37,12 @@ namespace Probis
             dgv_list.DataMember = "paket";
         }
         public static string id="";
+        public static int harga;
         private void dgv_list_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
-                MessageBox.Show(id);
+                harga = Convert.ToInt32(dgv_list.Rows[e.RowIndex].Cells[3].Value);
                 id = dgv_list.Rows[e.RowIndex].Cells[0].Value.ToString();
                 lihatPaket l = new lihatPaket();
                 this.Hide();

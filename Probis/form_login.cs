@@ -22,8 +22,8 @@ namespace Probis
         DataTable dt = new DataTable();
         OracleDataAdapter adapter = new OracleDataAdapter();
         OracleCommand cmd;
-        
 
+        public static string idpeg = "";
         private void btn_login_Click(object sender, EventArgs e)
         {
             if (txt_username.Text == "" && txt_pass.Text == "") MessageBox.Show("Harap Isi Semua Field ! ");
@@ -54,6 +54,7 @@ namespace Probis
                                 if (row["pass"].ToString() == txt_pass.Text) {
                                     cekpass = true;
                                     jabatan = row["jabatan"].ToString();
+                                    idpeg = row["id"].ToString();
                                 }
                             }                                
                         }
@@ -74,7 +75,7 @@ namespace Probis
         }
         private void setupdata(){
             conn.Open();
-            string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan FROM pegawai ";
+            string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan,pegawai_id as id FROM pegawai ";
             adapter = new OracleDataAdapter(query, conn);
             adapter.Fill(ds);
             conn.Close();
