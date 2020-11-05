@@ -19,7 +19,6 @@ namespace Probis
         public Home()
         {
             InitializeComponent();
-            dgv();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +28,7 @@ namespace Probis
         void dgv()
         {
             conn.Open();
-            OracleCommand cmd = new OracleCommand("SELECT tour_id as ID tour_nama as Nama_Tour,tour_date_awal as Tanggal_Tour,tour_harga as Harga from paket_tour", conn);
+            OracleCommand cmd = new OracleCommand("SELECT tour_id as ID, tour_nama as Nama_Tour,tour_date_awal as Tanggal_Tour,tour_harga as Harga from paket_tour", conn);
             da = new OracleDataAdapter(cmd);
             ds = new DataSet();
             conn.Close();
@@ -42,17 +41,28 @@ namespace Probis
         {
             if (e.RowIndex > -1)
             {
+                MessageBox.Show(id);
+                id = dgv_list.Rows[e.RowIndex].Cells[0].Value.ToString();
                 lihatPaket l = new lihatPaket();
                 this.Hide();
                 l.ShowDialog();
                 this.Show();
-                id = dgv_list.Rows[e.RowIndex].Cells[0].Value.ToString();
             }
         }
 
         private void dgv_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            dgv();
         }
     }
 }
