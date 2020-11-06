@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeAdmin));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.lbl_user = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_flight = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_hotel = new Bunifu.Framework.UI.BunifuTileButton();
+            this.lbl_user = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnUser = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_laporan = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_tour = new Bunifu.Framework.UI.BunifuTileButton();
@@ -65,26 +65,6 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(564, 677);
             this.bunifuCards1.TabIndex = 0;
-            // 
-            // lbl_user
-            // 
-            this.lbl_user.AutoSize = true;
-            this.lbl_user.Font = new System.Drawing.Font("Monotype Corsiva", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_user.Location = new System.Drawing.Point(482, 12);
-            this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(52, 24);
-            this.lbl_user.TabIndex = 23;
-            this.lbl_user.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(423, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 24);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Hello,";
             // 
             // btn_flight
             // 
@@ -125,6 +105,26 @@
             this.btn_hotel.Size = new System.Drawing.Size(126, 135);
             this.btn_hotel.TabIndex = 24;
             this.btn_hotel.Click += new System.EventHandler(this.btn_hotel_Click);
+            // 
+            // lbl_user
+            // 
+            this.lbl_user.AutoSize = true;
+            this.lbl_user.Font = new System.Drawing.Font("Monotype Corsiva", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user.Location = new System.Drawing.Point(482, 12);
+            this.lbl_user.Name = "lbl_user";
+            this.lbl_user.Size = new System.Drawing.Size(52, 24);
+            this.lbl_user.TabIndex = 23;
+            this.lbl_user.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(423, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 24);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Hello,";
             // 
             // btnUser
             // 
@@ -203,7 +203,7 @@
             this.btn_Logout.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Logout.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Logout.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Logout.Location = new System.Drawing.Point(16, 12);
+            this.btn_Logout.Location = new System.Drawing.Point(15, 12);
             this.btn_Logout.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(98, 48);
