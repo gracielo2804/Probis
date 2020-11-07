@@ -153,6 +153,12 @@
     <Compile Include="listPakettour.Designer.cs">
       <DependentUpon>listPakettour.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListPeserta Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListPeserta Tour.Designer.cs">
+      <DependentUpon>ListPeserta Tour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masterdetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="listPakettour.resx">
       <DependentUpon>listPakettour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListPeserta Tour.resx">
+      <DependentUpon>ListPeserta Tour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masterdetail.resx">
       <DependentUpon>Masterdetail.cs</DependentUpon>

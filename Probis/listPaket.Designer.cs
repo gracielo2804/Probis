@@ -33,12 +33,13 @@
             this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_listpaket = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Peserta = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listpaket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(682, 11);
+            this.btn_Back.Location = new System.Drawing.Point(705, 26);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(98, 40);
@@ -126,12 +127,23 @@
             this.Column9,
             this.Column10,
             this.Column11,
-            this.Column12});
+            this.Column12,
+            this.Peserta});
             this.dgv_listpaket.Location = new System.Drawing.Point(27, 87);
             this.dgv_listpaket.Name = "dgv_listpaket";
             this.dgv_listpaket.RowTemplate.Height = 28;
-            this.dgv_listpaket.Size = new System.Drawing.Size(753, 513);
+            this.dgv_listpaket.Size = new System.Drawing.Size(836, 513);
             this.dgv_listpaket.TabIndex = 78;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(273, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 55);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "List Paket Tour";
             // 
             // Column8
             // 
@@ -158,21 +170,16 @@
             this.Column12.HeaderText = "Details";
             this.Column12.Name = "Column12";
             // 
-            // label1
+            // Peserta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 55);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "List Paket Tour";
+            this.Peserta.HeaderText = "Peserta";
+            this.Peserta.Name = "Peserta";
             // 
             // listPaket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 698);
+            this.ClientSize = new System.Drawing.Size(875, 698);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
@@ -198,5 +205,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewButtonColumn Column12;
+        private System.Windows.Forms.DataGridViewButtonColumn Peserta;
     }
 }
