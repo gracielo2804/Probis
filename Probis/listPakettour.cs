@@ -26,13 +26,18 @@ namespace Probis
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
             conn.Open();
-            OracleCommand query = new OracleCommand("SELECT tour_nama,tour_id FROM paket_tour", conn);
+            OracleCommand query = new OracleCommand("SELECT tour_nama,tour_id,tour_status FROM paket_tour", conn);
             da= new OracleDataAdapter(query);
             ds = new DataSet();
             conn.Close();
             da.Fill(ds);
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                comboBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+                comboBox3.Items.Add(ds.Tables[0].Rows[i][2].ToString());
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                if (ds.Tables[0].Rows[i][2].ToString().Equals("0"))
+                {
+                    comboBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString()+" **Tidak Aktif**");
+                }else comboBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString() + " **Aktif**");
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 comboBox2.Items.Add(ds.Tables[0].Rows[i][1].ToString());
         }
@@ -62,23 +67,41 @@ namespace Probis
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             dgv();
+            if (comboBox3.Items[comboBox1.SelectedIndex].ToString().Equals("0"))
+            {
+                btn_delete.ButtonText = "Aktifkan";
+            }
+            else btn_delete.ButtonText = "Nonaktifkan";
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Delete Item Paket "+comboBox1.SelectedItem.ToString()+" ?", "Delete Item Paket", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            if (comboBox3.Items[comboBox1.SelectedIndex].Equals("1")){
+                DialogResult dialogResult = MessageBox.Show("Nonaktifkan Item Paket " + comboBox1.SelectedItem.ToString() + " ?", "Nonatkifkan Item Paket", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    conn.Open();
+                    OracleCommand query1 = new OracleCommand("update paket_tour set tour_status ='0' where tour_id='" + comboBox2.Items[comboBox1.SelectedIndex].ToString() + "'", conn);
+                    query1.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Berhasil Menonaktifkan" + comboBox1.SelectedItem.ToString());
+                    cb();
+                    comboBox1.SelectedIndex = -1;
+                }
+            }
+            else
             {
-                conn.Open();
-                /*  MessageBox.Show(cbPaket.SelectedItem.ToString());*/
-                OracleCommand query = new OracleCommand("delete dpaket where tour_id='" + comboBox2.Items[comboBox1.SelectedIndex].ToString() + "'", conn);
-                query.ExecuteNonQuery();
-                OracleCommand query1 = new OracleCommand("delete paket_tour where tour_id ='" + comboBox2.Items[comboBox1.SelectedIndex].ToString() + "'",conn);
-                query1.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Berhasil Delete"+comboBox1.SelectedItem.ToString());
-                cb();
-                comboBox1.SelectedIndex = -1;
+                DialogResult dialogResult = MessageBox.Show("Aktifkan Item Paket " + comboBox1.SelectedItem.ToString() + " ?", "Atkifkan Item Paket", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    conn.Open();
+                    OracleCommand query1 = new OracleCommand("update paket_tour set tour_status ='1' where tour_id='" + comboBox2.Items[comboBox1.SelectedIndex].ToString() + "'", conn);
+                    query1.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Berhasil Mengaktifkan" + comboBox1.SelectedItem.ToString());
+                    cb();
+                    comboBox1.SelectedIndex = -1;
+                }
             }
         }
     }

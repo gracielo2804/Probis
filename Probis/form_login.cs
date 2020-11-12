@@ -23,7 +23,7 @@ namespace Probis
         OracleDataAdapter adapter = new OracleDataAdapter();
         OracleCommand cmd;
 
-        public static string idpeg = "";
+        public static string idpeg = "",nama="";
         private void btn_login_Click(object sender, EventArgs e)
         {
             if (txt_username.Text == "" && txt_pass.Text == "") MessageBox.Show("Harap Isi Semua Field ! ");
@@ -40,7 +40,7 @@ namespace Probis
                 else
                 {
                     setupdata();
-                    bool cekuser=false, cekpass=false;
+                    bool cekuser=false, cekpass=false,status=false;
                     string jabatan="";
                     //string user = "";
                     foreach (DataTable table in ds.Tables)
@@ -53,14 +53,23 @@ namespace Probis
                                 cekuser = true;
                                 if (row["pass"].ToString() == txt_pass.Text) {
                                     cekpass = true;
-                                    jabatan = row["jabatan"].ToString();
-                                    idpeg = row["id"].ToString();
+                                    if (row["status"].ToString() == "1")
+                                    {
+                                        status = true;
+                                        jabatan = row["jabatan"].ToString();
+                                        idpeg = row["id"].ToString();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Status anda Non AKtif");
+                                    }
                                 }
                             }                                
                         }
                     }
                     //MessageBox.Show(user);
-                    if(cekuser && cekpass) {
+                    if(cekuser && cekpass && status) {
+                        nama = txt_username.Text;
                         Home h = new Home();
                         this.Hide();
                         h.ShowDialog();
@@ -75,7 +84,7 @@ namespace Probis
         }
         private void setupdata(){
             conn.Open();
-            string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan,pegawai_id as id FROM pegawai ";
+            string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan,pegawai_id as id,pegawai_status as status FROM pegawai ";
             adapter = new OracleDataAdapter(query, conn);
             adapter.Fill(ds);
             conn.Close();

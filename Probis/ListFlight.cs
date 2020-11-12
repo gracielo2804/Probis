@@ -24,6 +24,7 @@ namespace Probis
 
         private void ListFlight_Load(object sender, EventArgs e)
         {
+            conn.Close();
             conn.Open();
             da = new OracleDataAdapter("Select f.FLIGHT_ID as ID,m.maskapai_nama as Maskapai,f.FLIGHT_ASAL as Asal,f.FLIGHT_TUJUAN as Tujuan,to_char(f.flight_datetime,'DD - Month - YYYY') as Tanggal,to_char(f.flight_datetime,'HH24:MI')as Jam,f.Flight_harga as Harga  from flight f,maskapai m where f.flight_maskapai=m.maskapai_id", conn);
             ds = new DataSet();

@@ -96,7 +96,7 @@ namespace Probis
                 conn.Open();
                 string tanggal = dateTimePicker1.Value.ToShortDateString();
                 
-                OracleCommand cmd = new OracleCommand("INSERT INTO paket_tour VALUES('" + idinput + "','" + txt_nPaket.Text+ "','1'," + tb_harga.Text+ ",to_date('" + tanggal+ "','DD MM YYYY'))", conn);
+                OracleCommand cmd = new OracleCommand("INSERT INTO paket_tour VALUES('" + idinput + "','" + txt_nPaket.Text+ "','1'," + tb_harga.Text+ ",to_date('" + tanggal+ "','DD MM YYYY'),"+kuota.Value+")", conn);
                 cmd.ExecuteNonQuery();
                 string kendaraan;
                 if (cmb_jenis.SelectedItem.Equals("Bis"))
@@ -139,7 +139,6 @@ namespace Probis
             dari.Text = "";
             tujuan.Text = "";
             txt_catat.Text = "";
-            cmb_jenis.SelectedIndex = -1;
             start++;
             lbl_hari.Text = start.ToString();
         }
@@ -154,7 +153,7 @@ namespace Probis
 
         private void btn_ok_Click(object sender, EventArgs e)
         {
-            if (nud_lama.Value > 1 && tb_harga.Text != "" && txt_nPaket.Text != "")
+            if (kuota.Value>1&&nud_lama.Value > 1 && tb_harga.Text != "" && txt_nPaket.Text != "")
             {
                 gb_detail.Visible = true;
                 gb_namaP.Enabled = false;

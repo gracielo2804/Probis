@@ -29,6 +29,7 @@ namespace Probis
 
         private void lisHotel_Load(object sender, EventArgs e)
         {
+            conn.Close();
             conn.Open();
 
             da = new OracleDataAdapter("Select h.hotel_id as id,h.hotel_name as nama,h.hotel_kota as kota,h.hotel_negara as negara,count(d.hotel_id) as jumlah_jenis from hotel h,dhotel d where h.hotel_id=d.hotel_id group by h.hotel_id,h.hotel_name, h.hotel_kota,h.hotel_negara", conn);

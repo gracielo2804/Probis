@@ -79,12 +79,13 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(707, 654);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(471, 425);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(145, 77);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(97, 50);
             this.bunifuThinButton22.TabIndex = 88;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // dgv_pesanan
             // 
@@ -99,10 +100,11 @@
             this.Column3,
             this.Column7,
             this.Column8});
-            this.dgv_pesanan.Location = new System.Drawing.Point(32, 426);
+            this.dgv_pesanan.Location = new System.Drawing.Point(21, 277);
+            this.dgv_pesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_pesanan.Name = "dgv_pesanan";
             this.dgv_pesanan.RowTemplate.Height = 28;
-            this.dgv_pesanan.Size = new System.Drawing.Size(820, 210);
+            this.dgv_pesanan.Size = new System.Drawing.Size(547, 136);
             this.dgv_pesanan.TabIndex = 87;
             // 
             // Column4
@@ -163,10 +165,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Crimson;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(38, 349);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(25, 227);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(122, 51);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(81, 33);
             this.bunifuThinButton21.TabIndex = 86;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -188,80 +190,87 @@
             this.btn_tambah.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.btn_tambah.IdleForecolor = System.Drawing.Color.Green;
             this.btn_tambah.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_tambah.Location = new System.Drawing.Point(200, 349);
-            this.btn_tambah.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_tambah.Location = new System.Drawing.Point(133, 227);
+            this.btn_tambah.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Size = new System.Drawing.Size(122, 51);
+            this.btn_tambah.Size = new System.Drawing.Size(81, 33);
             this.btn_tambah.TabIndex = 85;
             this.btn_tambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_nopassport
             // 
             this.txt_nopassport.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_nopassport.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nopassport.Location = new System.Drawing.Point(587, 140);
+            this.txt_nopassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nopassport.Location = new System.Drawing.Point(391, 91);
+            this.txt_nopassport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_nopassport.Multiline = true;
             this.txt_nopassport.Name = "txt_nopassport";
-            this.txt_nopassport.Size = new System.Drawing.Size(266, 35);
+            this.txt_nopassport.Size = new System.Drawing.Size(179, 24);
             this.txt_nopassport.TabIndex = 84;
             // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(457, 140);
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(305, 91);
+            this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(124, 24);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(117, 17);
             this.bunifuCustomLabel9.TabIndex = 83;
             this.bunifuCustomLabel9.Text = "No.Passport  : ";
             // 
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(504, 201);
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(336, 131);
+            this.bunifuCustomLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(77, 24);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(72, 17);
             this.bunifuCustomLabel8.TabIndex = 81;
             this.bunifuCustomLabel8.Text = "Harga  : ";
             // 
             // txt_nama
             // 
             this.txt_nama.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_nama.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nama.Location = new System.Drawing.Point(187, 140);
+            this.txt_nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nama.Location = new System.Drawing.Point(125, 91);
+            this.txt_nama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_nama.Multiline = true;
             this.txt_nama.Name = "txt_nama";
-            this.txt_nama.Size = new System.Drawing.Size(266, 35);
+            this.txt_nama.Size = new System.Drawing.Size(179, 24);
             this.txt_nama.TabIndex = 70;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(88, 140);
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(59, 91);
+            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(75, 24);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(69, 17);
             this.bunifuCustomLabel7.TabIndex = 69;
             this.bunifuCustomLabel7.Text = "Nama  : ";
             // 
             // kodepesawat
             // 
             this.kodepesawat.AutoSize = true;
-            this.kodepesawat.Font = new System.Drawing.Font("Square721 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kodepesawat.Location = new System.Drawing.Point(190, 101);
+            this.kodepesawat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kodepesawat.Location = new System.Drawing.Point(127, 66);
+            this.kodepesawat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.kodepesawat.Name = "kodepesawat";
-            this.kodepesawat.Size = new System.Drawing.Size(65, 21);
+            this.kodepesawat.Size = new System.Drawing.Size(47, 15);
             this.kodepesawat.TabIndex = 66;
             this.kodepesawat.Text = "label2";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(14, 98);
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(9, 64);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(154, 24);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(149, 17);
             this.bunifuCustomLabel2.TabIndex = 65;
             this.bunifuCustomLabel2.Text = "Kode Pemesanan : ";
             // 
@@ -269,66 +278,73 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 9);
+            this.label1.Location = new System.Drawing.Point(135, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 55);
+            this.label1.Size = new System.Drawing.Size(262, 38);
             this.label1.TabIndex = 62;
             this.label1.Text = "Pemesanan Paket\r\n";
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(88, 302);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(59, 196);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(72, 24);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(66, 17);
             this.bunifuCustomLabel1.TabIndex = 89;
             this.bunifuCustomLabel1.Text = "Umur  : ";
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(35, 250);
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(23, 162);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(128, 24);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(124, 17);
             this.bunifuCustomLabel3.TabIndex = 90;
             this.bunifuCustomLabel3.Text = "Tanggal Lahir : ";
             // 
             // lblUmur
             // 
             this.lblUmur.AutoSize = true;
-            this.lblUmur.Font = new System.Drawing.Font("Square721 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUmur.Location = new System.Drawing.Point(183, 305);
+            this.lblUmur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUmur.Location = new System.Drawing.Point(122, 198);
+            this.lblUmur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUmur.Name = "lblUmur";
-            this.lblUmur.Size = new System.Drawing.Size(65, 21);
+            this.lblUmur.Size = new System.Drawing.Size(47, 15);
             this.lblUmur.TabIndex = 91;
             this.lblUmur.Text = "label2";
             // 
             // dtp_tglLhir
             // 
-            this.dtp_tglLhir.Location = new System.Drawing.Point(187, 250);
+            this.dtp_tglLhir.Location = new System.Drawing.Point(125, 162);
+            this.dtp_tglLhir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_tglLhir.Name = "dtp_tglLhir";
-            this.dtp_tglLhir.Size = new System.Drawing.Size(200, 26);
+            this.dtp_tglLhir.Size = new System.Drawing.Size(135, 20);
             this.dtp_tglLhir.TabIndex = 92;
             // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(28, 201);
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(19, 131);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(132, 24);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(123, 17);
             this.bunifuCustomLabel4.TabIndex = 93;
             this.bunifuCustomLabel4.Text = "Jenis Kelamin : ";
             // 
             // rbLaki
             // 
             this.rbLaki.AutoSize = true;
-            this.rbLaki.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbLaki.Location = new System.Drawing.Point(187, 202);
+            this.rbLaki.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbLaki.Location = new System.Drawing.Point(125, 131);
+            this.rbLaki.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbLaki.Name = "rbLaki";
-            this.rbLaki.Size = new System.Drawing.Size(117, 24);
+            this.rbLaki.Size = new System.Drawing.Size(85, 17);
             this.rbLaki.TabIndex = 94;
             this.rbLaki.TabStop = true;
             this.rbLaki.Text = "Laki - Laki";
@@ -337,10 +353,11 @@
             // rb_perempuan
             // 
             this.rb_perempuan.AutoSize = true;
-            this.rb_perempuan.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_perempuan.Location = new System.Drawing.Point(325, 202);
+            this.rb_perempuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_perempuan.Location = new System.Drawing.Point(217, 131);
+            this.rb_perempuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rb_perempuan.Name = "rb_perempuan";
-            this.rb_perempuan.Size = new System.Drawing.Size(124, 24);
+            this.rb_perempuan.Size = new System.Drawing.Size(88, 17);
             this.rb_perempuan.TabIndex = 95;
             this.rb_perempuan.TabStop = true;
             this.rb_perempuan.Text = "Perempuan";
@@ -349,28 +366,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Square721 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(583, 204);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(389, 133);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 21);
+            this.label3.Size = new System.Drawing.Size(15, 15);
             this.label3.TabIndex = 96;
             this.label3.Text = "$";
             // 
             // lblHarga
             // 
             this.lblHarga.AutoSize = true;
-            this.lblHarga.Font = new System.Drawing.Font("Square721 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHarga.Location = new System.Drawing.Point(599, 204);
+            this.lblHarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHarga.Location = new System.Drawing.Point(399, 133);
+            this.lblHarga.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHarga.Name = "lblHarga";
-            this.lblHarga.Size = new System.Drawing.Size(68, 21);
+            this.lblHarga.Size = new System.Drawing.Size(43, 15);
             this.lblHarga.TabIndex = 97;
             this.lblHarga.Text = "1.678";
             // 
             // CustOrdercs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 742);
+            this.ClientSize = new System.Drawing.Size(589, 482);
             this.Controls.Add(this.lblHarga);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rb_perempuan);
@@ -392,6 +411,7 @@
             this.Controls.Add(this.kodepesawat);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CustOrdercs";
             this.Text = "CustOrdercs";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pesanan)).EndInit();

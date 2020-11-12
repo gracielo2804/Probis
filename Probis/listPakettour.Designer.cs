@@ -34,6 +34,7 @@
             this.btn_delete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             this.btn_delete.ActiveLineColor = System.Drawing.Color.DarkBlue;
             this.btn_delete.BackColor = System.Drawing.SystemColors.Control;
             this.btn_delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delete.BackgroundImage")));
-            this.btn_delete.ButtonText = "Delete";
+            this.btn_delete.ButtonText = "Nonaktifkan";
             this.btn_delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.Black;
@@ -73,10 +74,10 @@
             this.btn_delete.IdleFillColor = System.Drawing.Color.Red;
             this.btn_delete.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_delete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_delete.Location = new System.Drawing.Point(606, 8);
+            this.btn_delete.Location = new System.Drawing.Point(603, 8);
             this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(78, 39);
+            this.btn_delete.Size = new System.Drawing.Size(90, 39);
             this.btn_delete.TabIndex = 86;
             this.btn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
@@ -116,11 +117,21 @@
             this.comboBox2.TabIndex = 88;
             this.comboBox2.Visible = false;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(258, 13);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(10, 21);
+            this.comboBox3.TabIndex = 89;
+            this.comboBox3.Visible = false;
+            // 
             // listPakettour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.btn_delete);
@@ -140,5 +151,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn_delete;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

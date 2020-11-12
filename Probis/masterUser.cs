@@ -26,14 +26,23 @@ namespace Probis
 
         private void masterUser_Load(object sender, EventArgs e)
         {
+            dgv();
+
+        }
+        void dgv()
+        {
+            ds.Clear();
             conn.Close();
             conn.Open();
             da = new OracleDataAdapter("Select * from pegawai", conn);
             ds = new DataSet();
             da.Fill(ds);
-            foreach (DataTable dt in ds.Tables) {
-                foreach (DataRow row in dt.Rows) {
-                    if (row["PEGAWAI_STATUS"].ToString() == "0") {
+            foreach (DataTable dt in ds.Tables)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["PEGAWAI_STATUS"].ToString() == "0")
+                    {
                         row["PEGAWAI_STATUS"] = "Tidak Aktif";
                     }
                     else row["PEGAWAI_STATUS"] = "Aktif";
@@ -43,7 +52,6 @@ namespace Probis
             conn.Close();
 
         }
-
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -65,12 +73,21 @@ namespace Probis
             dgv_listUser.DataSource = ds.Tables[0];
             conn.Close();
         }
-
+        string mode = "";
         private void dgv_listUser_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)
             {
                 idselected = dgv_listUser.Rows[e.RowIndex].Cells[0].Value.ToString();
+                if (dgv_listUser.Rows[e.RowIndex].Cells[6].Value.ToString().Equals("Aktif"))
+                {
+                    mode = "non";
+                    btn_hapus.ButtonText = "Nonaktifkan";
+                }
+                else if (dgv_listUser.Rows[e.RowIndex].Cells[6].Value.ToString().Equals("Tidak Aktif")) {
+                    mode = "aktif";
+                    btn_hapus.ButtonText = "Aktifkan"; 
+                }
             }
             else idselected = "";
         }
@@ -82,10 +99,19 @@ namespace Probis
             {
                 conn.Close();
                 conn.Open();
-                cmd = new OracleCommand("Update Pegawai set pegawai_status='0' where pegawai_id='" + idselected + "'",conn);
+                if (mode == "non")
+                {
+                    cmd = new OracleCommand("Update Pegawai set pegawai_status='0' where pegawai_id='" + idselected + "'", conn);
+                    btn_hapus.ButtonText = "Aktifkan";
+                }
+                else if (mode=="aktif") {
+                    cmd = new OracleCommand("Update Pegawai set pegawai_status='1' where pegawai_id='" + idselected + "'", conn);
+                    btn_hapus.ButtonText = "Nonaktifkan";
+                }
                 cmd.ExecuteNonQuery();
                 masterUser_Load(sender, e);
                 conn.Close();
+                dgv();
             }
         }
     }
