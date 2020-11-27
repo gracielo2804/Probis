@@ -51,9 +51,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 26);
+            this.label1.Location = new System.Drawing.Point(117, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(547, 55);
+            this.label1.Size = new System.Drawing.Size(378, 38);
             this.label1.TabIndex = 13;
             this.label1.Text = "Pemesanan Tiket Pesawat";
             // 
@@ -61,19 +62,21 @@
             // 
             this.tbalamat.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tbalamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbalamat.Location = new System.Drawing.Point(119, 203);
+            this.tbalamat.Location = new System.Drawing.Point(79, 132);
+            this.tbalamat.Margin = new System.Windows.Forms.Padding(2);
             this.tbalamat.Multiline = true;
             this.tbalamat.Name = "tbalamat";
-            this.tbalamat.Size = new System.Drawing.Size(266, 35);
+            this.tbalamat.Size = new System.Drawing.Size(179, 24);
             this.tbalamat.TabIndex = 43;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(21, 205);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(14, 133);
+            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(98, 25);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(72, 17);
             this.bunifuCustomLabel7.TabIndex = 42;
             this.bunifuCustomLabel7.Text = "Alamat : ";
             // 
@@ -81,9 +84,10 @@
             // 
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(406, 122);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(271, 79);
+            this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(149, 25);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(112, 17);
             this.bunifuCustomLabel9.TabIndex = 56;
             this.bunifuCustomLabel9.Text = "No.Telepon  : ";
             this.bunifuCustomLabel9.Click += new System.EventHandler(this.bunifuCustomLabel9_Click);
@@ -92,11 +96,16 @@
             // 
             this.tbtelfon.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tbtelfon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbtelfon.Location = new System.Drawing.Point(564, 120);
+            this.tbtelfon.Location = new System.Drawing.Point(376, 78);
+            this.tbtelfon.Margin = new System.Windows.Forms.Padding(2);
             this.tbtelfon.Multiline = true;
             this.tbtelfon.Name = "tbtelfon";
-            this.tbtelfon.Size = new System.Drawing.Size(266, 35);
+            this.tbtelfon.Size = new System.Drawing.Size(179, 24);
             this.tbtelfon.TabIndex = 57;
+            this.tbtelfon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbtelfon_MouseClick);
+            this.tbtelfon.TextChanged += new System.EventHandler(this.tbtelfon_TextChanged);
+            this.tbtelfon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbtelfon_KeyPress);
+            this.tbtelfon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbtelfon_MouseDoubleClick);
             // 
             // bunifuThinButton21
             // 
@@ -116,10 +125,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Crimson;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(26, 260);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(17, 169);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(122, 51);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(81, 33);
             this.bunifuThinButton21.TabIndex = 59;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -142,10 +151,10 @@
             this.btn_tambah.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.btn_tambah.IdleForecolor = System.Drawing.Color.Green;
             this.btn_tambah.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_tambah.Location = new System.Drawing.Point(188, 260);
-            this.btn_tambah.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btn_tambah.Location = new System.Drawing.Point(125, 169);
+            this.btn_tambah.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Size = new System.Drawing.Size(122, 51);
+            this.btn_tambah.Size = new System.Drawing.Size(81, 33);
             this.btn_tambah.TabIndex = 58;
             this.btn_tambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_tambah.Click += new System.EventHandler(this.btn_tambah_Click);
@@ -154,10 +163,11 @@
             // 
             this.dgv_pesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_pesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_pesanan.Location = new System.Drawing.Point(12, 341);
+            this.dgv_pesanan.Location = new System.Drawing.Point(8, 222);
+            this.dgv_pesanan.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_pesanan.Name = "dgv_pesanan";
             this.dgv_pesanan.RowTemplate.Height = 28;
-            this.dgv_pesanan.Size = new System.Drawing.Size(818, 195);
+            this.dgv_pesanan.Size = new System.Drawing.Size(545, 127);
             this.dgv_pesanan.TabIndex = 60;
             // 
             // bunifuThinButton22
@@ -178,10 +188,10 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.ForestGreen;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(705, 571);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(470, 371);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(122, 51);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(81, 33);
             this.bunifuThinButton22.TabIndex = 61;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -190,19 +200,21 @@
             // 
             this.tbemail.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tbemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbemail.Location = new System.Drawing.Point(119, 160);
+            this.tbemail.Location = new System.Drawing.Point(79, 104);
+            this.tbemail.Margin = new System.Windows.Forms.Padding(2);
             this.tbemail.Multiline = true;
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(266, 35);
+            this.tbemail.Size = new System.Drawing.Size(179, 24);
             this.tbemail.TabIndex = 65;
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(36, 162);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(24, 105);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(84, 25);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(62, 17);
             this.bunifuCustomLabel1.TabIndex = 64;
             this.bunifuCustomLabel1.Text = "Email : ";
             // 
@@ -210,19 +222,21 @@
             // 
             this.tbnama.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tbnama.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbnama.Location = new System.Drawing.Point(119, 117);
+            this.tbnama.Location = new System.Drawing.Point(79, 76);
+            this.tbnama.Margin = new System.Windows.Forms.Padding(2);
             this.tbnama.Multiline = true;
             this.tbnama.Name = "tbnama";
-            this.tbnama.Size = new System.Drawing.Size(266, 35);
+            this.tbnama.Size = new System.Drawing.Size(179, 24);
             this.tbnama.TabIndex = 63;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(25, 119);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(17, 77);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(93, 25);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(69, 17);
             this.bunifuCustomLabel2.TabIndex = 62;
             this.bunifuCustomLabel2.Text = "Nama  : ";
             // 
@@ -230,27 +244,33 @@
             // 
             this.tbpassport.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tbpassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbpassport.Location = new System.Drawing.Point(564, 163);
+            this.tbpassport.Location = new System.Drawing.Point(376, 106);
+            this.tbpassport.Margin = new System.Windows.Forms.Padding(2);
             this.tbpassport.Multiline = true;
             this.tbpassport.Name = "tbpassport";
-            this.tbpassport.Size = new System.Drawing.Size(266, 35);
+            this.tbpassport.Size = new System.Drawing.Size(179, 24);
             this.tbpassport.TabIndex = 69;
+            this.tbpassport.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbpassport_MouseClick);
+            this.tbpassport.TextChanged += new System.EventHandler(this.tbpassport_TextChanged);
+            this.tbpassport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbpassport_KeyPress);
+            this.tbpassport.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbpassport_MouseDoubleClick);
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(398, 165);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(265, 107);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(155, 25);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(117, 17);
             this.bunifuCustomLabel3.TabIndex = 68;
             this.bunifuCustomLabel3.Text = "No.Passport  : ";
             // 
             // Booking_Flight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 631);
+            this.ClientSize = new System.Drawing.Size(561, 410);
             this.Controls.Add(this.tbpassport);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.tbemail);
@@ -266,6 +286,7 @@
             this.Controls.Add(this.tbalamat);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Booking_Flight";
             this.Text = "Booking_Fligh";
             this.Load += new System.EventHandler(this.Booking_Flight_Load);

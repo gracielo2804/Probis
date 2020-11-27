@@ -12,6 +12,7 @@ namespace Probis
 {
     public partial class detailHarga : Form
     {
+        public static double tax;
         public detailHarga()
         {
             InitializeComponent();
@@ -19,7 +20,9 @@ namespace Probis
 
         private void detailHarga_Load(object sender, EventArgs e)
         {
-            lbl_harga.Text = Home.harga.ToString();
+            lbl_harga.Text = Home.harga.ToString("###,###");
+            tax = Convert.ToDouble(Home.harga) * 0.1;
+            lbl_tax.Text = tax.ToString("###,###");
         }
 
         private void btn_back_Click(object sender, EventArgs e)

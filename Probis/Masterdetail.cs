@@ -95,8 +95,9 @@ namespace Probis
                 conn.Close();
                 conn.Open();
                 string tanggal = dateTimePicker1.Value.ToShortDateString();
-                
-                OracleCommand cmd = new OracleCommand("INSERT INTO paket_tour VALUES('" + idinput + "','" + txt_nPaket.Text+ "','1'," + tb_harga.Text+ ",to_date('" + tanggal+ "','DD MM YYYY'),"+kuota.Value+")", conn);
+                DateTime akhir = dateTimePicker1.Value.AddDays(Convert.ToDouble(nud_lama.Value));
+                string tglakhir = akhir.ToShortDateString();
+                OracleCommand cmd = new OracleCommand("INSERT INTO paket_tour VALUES('" + idinput + "','" + txt_nPaket.Text+ "','1'," + tb_harga.Text+ ",to_date('" + tanggal+ "','DD MM YYYY'),"+"to_date('"+akhir+"','DD MM YYYY'),"+kuota.Value+")", conn);
                 cmd.ExecuteNonQuery();
                 string kendaraan;
                 if (cmb_jenis.SelectedItem.Equals("Bis"))
