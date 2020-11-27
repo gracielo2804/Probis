@@ -113,7 +113,7 @@ namespace Probis
             {
                 conn.Close();
                 conn.Open();
-                OracleCommand query = new OracleCommand("SELECT customer_phone FROM customer where customer_phone LIKE '%" + tbtelfon.Text + "%'", conn);
+                OracleCommand query = new OracleCommand("SELECT customer_phone FROM customer where customer_phone = '" + tbtelfon.Text + "'", conn);
                 da = new OracleDataAdapter(query);
                 ds = new DataSet();
                 da.Fill(ds);
@@ -127,7 +127,7 @@ namespace Probis
                     ds = new DataSet();
                     da.Fill(ds);
                     conn.Close();
-                    if (ds.Tables.Count != 0)
+                    if (ds.Tables[0].Rows.Count != 0)
                     {
                         DialogResult d = MessageBox.Show("Terdapat Customer Dengan No Paspport sama,Update data customer?", "Warning", MessageBoxButtons.YesNo);
                         if (d == DialogResult.Yes)
@@ -169,11 +169,11 @@ namespace Probis
                     if (d == DialogResult.Yes)
                     {
                         conn.Open();
-                        OracleCommand cmdId = new OracleCommand("select customer_id where customer_phone ='" + tbtelfon.Text + "'", conn);
-                        da = new OracleDataAdapter(cmdId);
-                        ds = new DataSet();
-                        da.Fill(ds);
-                        OracleCommand cmd = new OracleCommand("update customer set customer_name = '" + tbnama.Text + "',customer_email = '" + tbemail.Text + "',customer_alamat ='" + tbalamat + "' where customer_id = '" + ds.Tables[0].Rows[0][0].ToString()+ "'", conn);
+                        OracleCommand cmdId = new OracleCommand("select customer_id from customer where customer_phone ='" + tbtelfon.Text + "'", conn);
+                        OracleDataAdapter das = new OracleDataAdapter(cmdId);
+                        DataSet dset = new DataSet();
+                        das.Fill(dset);
+                        OracleCommand cmd = new OracleCommand("update customer set customer_name = '" + tbnama.Text + "',customer_email = '" + tbemail.Text + "',customer_alamat ='" + tbalamat + "',custmer_passport='"+tbpassport.Text+"' where customer_id = '" + ds.Tables[0].Rows[0][0].ToString()+ "'", conn);
                         try
                         {
                             cmd.ExecuteNonQuery();
