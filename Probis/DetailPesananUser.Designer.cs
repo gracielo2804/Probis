@@ -112,11 +112,14 @@
             // 
             // dgv_detail
             // 
+            this.dgv_detail.AllowUserToAddRows = false;
+            this.dgv_detail.AllowUserToDeleteRows = false;
             this.dgv_detail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detail.Location = new System.Drawing.Point(11, 161);
-            this.dgv_detail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_detail.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_detail.Name = "dgv_detail";
+            this.dgv_detail.ReadOnly = true;
             this.dgv_detail.RowTemplate.Height = 28;
             this.dgv_detail.Size = new System.Drawing.Size(641, 264);
             this.dgv_detail.TabIndex = 85;
@@ -208,7 +211,7 @@
             this.Controls.Add(this.txt_namapaket);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DetailPesananUser";
             this.Text = "DetailPesananUser";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).EndInit();

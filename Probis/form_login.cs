@@ -17,7 +17,7 @@ namespace Probis
         {
             InitializeComponent();
         }
-        public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=david27;Password=david27");
+        public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=probis;Password=probis");
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
         OracleDataAdapter adapter = new OracleDataAdapter();

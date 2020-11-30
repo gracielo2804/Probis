@@ -130,6 +130,7 @@
             this.btn_Logout.Size = new System.Drawing.Size(65, 26);
             this.btn_Logout.TabIndex = 11;
             this.btn_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // Home
             // 

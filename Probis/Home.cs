@@ -68,5 +68,10 @@ namespace Probis
         {
             dgv();
         }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
