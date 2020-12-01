@@ -136,6 +136,9 @@
     <Compile Include="CustOrdercs.Designer.cs">
       <DependentUpon>CustOrdercs.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -153,11 +156,23 @@
     <Compile Include="DetailPesananUser.Designer.cs">
       <DependentUpon>DetailPesananUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLaporanFasilitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanFasilitas.Designer.cs">
+      <DependentUpon>FormLaporanFasilitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormlaporanKegiatan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormlaporanKegiatan.Designer.cs">
       <DependentUpon>FormlaporanKegiatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanFasilitas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanFasilitas.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="laporanKegiatan.cs">
       <AutoGen>True</AutoGen>
@@ -302,8 +317,15 @@
     <EmbeddedResource Include="DetailPesananUser.resx">
       <DependentUpon>DetailPesananUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanFasilitas.resx">
+      <DependentUpon>FormLaporanFasilitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormlaporanKegiatan.resx">
       <DependentUpon>FormlaporanKegiatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanFasilitas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanFasilitas.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="laporanKegiatan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

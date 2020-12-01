@@ -40,5 +40,13 @@ namespace Probis
             formlaporanKegiatan.ShowDialog();
             this.Show();
         }
+
+        private void btn_flight_Click(object sender, EventArgs e)
+        {
+            FormLaporanFasilitas formLaporanFasilitas = new FormLaporanFasilitas();
+            this.Hide();
+            formLaporanFasilitas.ShowDialog();
+            this.Show();
+        }
     }
 }

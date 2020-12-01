@@ -74,6 +74,7 @@
             this.btn_flight.Name = "btn_flight";
             this.btn_flight.Size = new System.Drawing.Size(84, 88);
             this.btn_flight.TabIndex = 29;
+            this.btn_flight.Click += new System.EventHandler(this.btn_flight_Click);
             // 
             // btn_hotel
             // 
