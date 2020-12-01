@@ -32,5 +32,13 @@ namespace Probis
             laporanPenjualan.ShowDialog();
             this.Show();
         }
+
+        private void btn_hotel_Click(object sender, EventArgs e)
+        {
+            FormlaporanKegiatan formlaporanKegiatan = new FormlaporanKegiatan();
+            this.Hide();
+            formlaporanKegiatan.ShowDialog();
+            this.Show();
+        }
     }
 }

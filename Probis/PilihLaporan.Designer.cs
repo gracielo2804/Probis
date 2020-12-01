@@ -68,7 +68,7 @@
             this.btn_flight.ImagePosition = 15;
             this.btn_flight.ImageZoom = 50;
             this.btn_flight.LabelPosition = 32;
-            this.btn_flight.LabelText = "List Flight";
+            this.btn_flight.LabelText = "Fasilitas";
             this.btn_flight.Location = new System.Drawing.Point(224, 321);
             this.btn_flight.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_flight.Name = "btn_flight";
@@ -87,12 +87,13 @@
             this.btn_hotel.ImagePosition = 15;
             this.btn_hotel.ImageZoom = 50;
             this.btn_hotel.LabelPosition = 32;
-            this.btn_hotel.LabelText = "List Hotel";
+            this.btn_hotel.LabelText = "Kegiatan";
             this.btn_hotel.Location = new System.Drawing.Point(94, 321);
             this.btn_hotel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_hotel.Name = "btn_hotel";
             this.btn_hotel.Size = new System.Drawing.Size(84, 88);
             this.btn_hotel.TabIndex = 28;
+            this.btn_hotel.Click += new System.EventHandler(this.btn_hotel_Click);
             // 
             // btn_laporan
             // 

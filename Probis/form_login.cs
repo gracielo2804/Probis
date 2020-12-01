@@ -19,6 +19,7 @@ namespace Probis
         }
         public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=probis;Password=probis");
         DataSet ds = new DataSet();
+
         DataTable dt = new DataTable();
         OracleDataAdapter adapter = new OracleDataAdapter();
         OracleCommand cmd;
@@ -83,11 +84,12 @@ namespace Probis
             }
         }
         private void setupdata(){
+            conn.Close();
             conn.Open();
             string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan,pegawai_id as id,pegawai_status as status FROM pegawai ";
             adapter = new OracleDataAdapter(query, conn);
             adapter.Fill(ds);
-            conn.Close();
+            
             conn.Close();
 
         }

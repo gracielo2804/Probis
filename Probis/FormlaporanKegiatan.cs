@@ -11,27 +11,42 @@ using Oracle.DataAccess.Client;
 
 namespace Probis
 {
-    public partial class laporanPalingBanyakDikunjungi : Form
+    public partial class FormlaporanKegiatan : Form
     {
-        public laporanPalingBanyakDikunjungi()
+        public FormlaporanKegiatan()
         {
             InitializeComponent();
         }
         OracleConnection conn = form_login.conn;
+        OracleDataAdapter adapter = new OracleDataAdapter();
+        DataSet ds = new DataSet();
+
+
+        private void FormlaporanKegiatan_Load(object sender, EventArgs e)
+        {
+            conn.Close();
+            conn.Open();
+            comboBox1.Items.Clear();
+            string query = "SELECT tour_nama,tour_id,tour_status FROM paket_tour";
+            adapter = new OracleDataAdapter(query, conn);
+            adapter.Fill(ds);
+            comboBox1.DataSource = ds.Tables[0];
+            comboBox1.ValueMember = "tour_id";
+            comboBox1.DisplayMember = "tour_nama";
+        }
+
         private void btnTampil_Click(object sender, EventArgs e)
         {
-            LaporanTerpopuler rprtTransaksi = new LaporanTerpopuler();
+            laporanKegiatan rprtKegiatan = new laporanKegiatan();
             try
             {
-                rprtTransaksi.SetDatabaseLogon("probis", "probis");
+                rprtKegiatan.SetDatabaseLogon("probis", "probis");
             }
             catch (Exception)
             {
 
                 throw;
             }
-            string dtawal = dtAwal.Value.ToShortDateString();
-            string dtakhir = dtAkhir.Value.ToShortDateString();
             OracleCommand query = new OracleCommand();
             query.Connection = conn;
             OracleDataAdapter adapter = new OracleDataAdapter(query);
@@ -40,7 +55,7 @@ namespace Probis
             adapter.Fill(dataset, "CUSTOMER");
             query.CommandText = "SELECT * FROM DHOTEL";
             adapter.Fill(dataset, "DHOTEL");
-            query.CommandText = "SELECT * FROM DPAKET";
+            query.CommandText = "SELECT * FROM DPAKET where tour_id='"+comboBox1.SelectedValue.ToString()+"'";
             adapter.Fill(dataset, "DPAKET");
             query.CommandText = "SELECT * FROM DTRANS";
             adapter.Fill(dataset, "DTRANS");
@@ -49,7 +64,6 @@ namespace Probis
             query.CommandText = "SELECT * FROM HOTEL";
             adapter.Fill(dataset, "HOTEL");
             query.CommandText = "SELECT * FROM HTRANS; ";
-            //query.CommandText = "SELECT * FROM HTRANS where TRANS_DATE BETWEEN '"+dtawal+"' AND '"+dtakhir+"' ";
             adapter.Fill(dataset, "HTRANS");
             query.CommandText = "SELECT * FROM MASKAPAI";
             adapter.Fill(dataset, "MASKAPAI");
@@ -59,15 +73,10 @@ namespace Probis
             adapter.Fill(dataset, "PEGAWAI");
             query.CommandText = "SELECT * FROM TRAINS";
             adapter.Fill(dataset, "TRAINS");
-            rprtTransaksi.SetDataSource(dataset);
+            rprtKegiatan.SetDataSource(dataset);
             //rprtTransaksi.SetParameterValue("tanggal_awal", dtAwal.Value);
             //rprtTransaksi.SetParameterValue("tanggal_akhir", dtAkhir.Value);
-            crystalReportViewer1.ReportSource = rprtTransaksi;
-        }
-
-        private void laporanPalingBanyakDikunjungi_Load(object sender, EventArgs e)
-        {
-
+            crystalReportViewer1.ReportSource = rprtKegiatan;
         }
     }
 }
