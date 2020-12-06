@@ -168,6 +168,12 @@
     <Compile Include="FormlaporanKegiatan.Designer.cs">
       <DependentUpon>FormlaporanKegiatan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLaporanLabaRugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanLabaRugi.Designer.cs">
+      <DependentUpon>FormLaporanLabaRugi.cs</DependentUpon>
+    </Compile>
     <Compile Include="LaporanFasilitas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -178,6 +184,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>laporanKegiatan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LaporanLabaRugi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanLabaRugi.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="laporanPalingBanyakDikunjungi.cs">
@@ -323,6 +335,9 @@
     <EmbeddedResource Include="FormlaporanKegiatan.resx">
       <DependentUpon>FormlaporanKegiatan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanLabaRugi.resx">
+      <DependentUpon>FormLaporanLabaRugi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LaporanFasilitas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LaporanFasilitas.cs</LastGenOutput>
@@ -330,6 +345,10 @@
     <EmbeddedResource Include="laporanKegiatan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>laporanKegiatan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanLabaRugi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanLabaRugi.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="laporanPalingBanyakDikunjungi.resx">
       <DependentUpon>laporanPalingBanyakDikunjungi.cs</DependentUpon>

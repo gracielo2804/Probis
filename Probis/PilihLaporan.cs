@@ -48,5 +48,13 @@ namespace Probis
             formLaporanFasilitas.ShowDialog();
             this.Show();
         }
+
+        private void btn_tour_Click(object sender, EventArgs e)
+        {
+            FormLaporanLabaRugi formLaporanLabaRugi = new FormLaporanLabaRugi();
+            this.Hide();
+            formLaporanLabaRugi.ShowDialog();
+            this.Show();
+        }
     }
 }

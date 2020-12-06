@@ -134,6 +134,7 @@
             this.btn_tour.Name = "btn_tour";
             this.btn_tour.Size = new System.Drawing.Size(94, 88);
             this.btn_tour.TabIndex = 26;
+            this.btn_tour.Click += new System.EventHandler(this.btn_tour_Click);
             // 
             // PilihLaporan
             // 
