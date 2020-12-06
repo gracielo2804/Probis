@@ -16,7 +16,7 @@ namespace Probis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PilihLaporan());
+            Application.Run(new form_login());
         }
     }
 }

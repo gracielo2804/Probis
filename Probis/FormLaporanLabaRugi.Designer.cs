@@ -100,6 +100,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtAwal);
             this.Name = "FormLaporanLabaRugi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLaporanLabaRugi";
             this.ResumeLayout(false);
             this.PerformLayout();
