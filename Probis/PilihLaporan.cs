@@ -56,5 +56,10 @@ namespace Probis
             formLaporanLabaRugi.ShowDialog();
             this.Show();
         }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
