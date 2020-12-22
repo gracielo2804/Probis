@@ -71,7 +71,10 @@ namespace Probis
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            form_login homeAdmin = new form_login();
+            this.Hide();
+            homeAdmin.ShowDialog();
+            this.Show();
         }
     }
 }

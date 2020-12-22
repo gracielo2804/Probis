@@ -97,10 +97,10 @@ namespace Probis
                     ds= new DataSet();
                     da.Fill(ds);
                     OracleCommand cmdin = new OracleCommand("insert into dtrans values('"+idinput+"','"+ds.Tables[0].Rows[0][0].ToString()+"','"+pesawat+"','"+hotel+"','"+Home.id.ToString()+"',"+biaya.ToString()+")", conn);
-                    MessageBox.Show(ds.Tables[0].Rows[0][0].ToString());
-                    MessageBox.Show(idinput);
-                    MessageBox.Show(pesawat);
-                    MessageBox.Show(Home.id.ToString());
+                    //MessageBox.Show(ds.Tables[0].Rows[0][0].ToString());
+                    //MessageBox.Show(idinput);
+                    //MessageBox.Show(pesawat);
+                    //MessageBox.Show(Home.id.ToString());
                     cmdin.ExecuteNonQuery();
                     
                 }
